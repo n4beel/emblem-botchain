@@ -102,6 +102,16 @@ export default function BadgeLookup() {
 
       {ready && query?.kind === "token" && single.isLoading && <Panel><Spinner label="Reading the chain" /></Panel>}
 
+      {/* Neither loading nor successful means the call failed outright — without this the page
+          renders nothing at all and reads as "no such badge", which is a different claim. */}
+      {ready && query?.kind === "token" && single.isError && (
+        <Panel>
+          <p className="text-[13px]" style={{ color: "var(--warning)" }}>
+            Could not reach the chain. This badge is unknown, not missing — try again.
+          </p>
+        </Panel>
+      )}
+
       {ready && query?.kind === "token" && single.isSuccess && (() => {
         const badge = single.data?.[0]?.result as Badge | undefined;
         const owner = single.data?.[1]?.result as Address | undefined;

@@ -83,10 +83,12 @@ export default function BadgeLookup() {
 
   return (
     <div className="flex flex-col gap-5">
-      <Panel>
-        <Input label="Badge number or holder address" value={typed} onChange={(e) => setTyped(e.target.value)}
-          placeholder="0  or  0x…" mono hint="No wallet needed to look one up." />
-      </Panel>
+      {/* A field, not a panel. Under your own badges a boxed input reads as a second thing of
+          equal weight, when it is the way to reach somebody else's. */}
+      <div className="max-w-sm">
+        <Input label="Look up a badge" value={typed} onChange={(e) => setTyped(e.target.value)}
+          placeholder="0  or  0x…" mono hint="By number or holder. No wallet needed." />
+      </div>
 
       {!ready && query && (
         <Panel><p className="text-[13px]" style={{ color: "var(--text-tertiary)" }}>

@@ -41,9 +41,9 @@
   # secret may ever be given one of these names. Nothing in these apps needs one.
   #
   # Fill in from the output of contracts/script/Deploy.s.sol.
-  NEXT_PUBLIC_BOTCHAIN_NETWORK = "testnet"
-  NEXT_PUBLIC_CONTRACT_677 = ""
-  NEXT_PUBLIC_DEPLOY_BLOCK_677 = ""
+  NEXT_PUBLIC_BOTCHAIN_NETWORK = "mainnet"
+  NEXT_PUBLIC_CONTRACT_677 = "0x5F4b0CD99CAdA0bF877BFf45061418F9780bA28d"
+  NEXT_PUBLIC_DEPLOY_BLOCK_677 = "27329474"
   NEXT_PUBLIC_CONTRACT_968 = "0x5F4b0CD99CAdA0bF877BFf45061418F9780bA28d"
   NEXT_PUBLIC_DEPLOY_BLOCK_968 = "27397272"
 

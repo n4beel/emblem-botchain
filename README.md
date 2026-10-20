@@ -2,6 +2,24 @@
 
 Non-transferable credential badges on BOT Chain.
 
+### BOT Chain mainnet (677) — live
+
+| | |
+|---|---|
+| Contract | [`0x5F4b0CD99CAdA0bF877BFf45061418F9780bA28d`](https://scan.botchain.ai/address/0x5F4b0CD99CAdA0bF877BFf45061418F9780bA28d) · source verified |
+| Deploy block | 27329474 |
+
+### Bohr testnet (968) — live
+
+| | |
+|---|---|
+| Contract | [`0x5F4b0CD99CAdA0bF877BFf45061418F9780bA28d`](https://scan.bohr.life/address/0x5F4b0CD99CAdA0bF877BFf45061418F9780bA28d) · source verified |
+| Deploy block | 27397272 |
+
+The site targets mainnet.
+
+---
+
 ## What it does
 Emblem issues soulbound credential badges implementing **ERC-721 and ERC-5192**. Any address can issue an attestation badge to any recipient with a descriptive label. `locked(tokenId)` returns true unconditionally, and every transfer path reverts.
 
